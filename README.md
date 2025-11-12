@@ -1,25 +1,10 @@
-<h1 align="center">Sample.kext</h1>
+<h1 align="center">GPUFix.kext</h1>
 
-<h5 align="center">Easily modifiable Sample Kernel Extension for learning.</h5>
+<h5 align="center">A macOS kernel extension that makes all GPUs work with full acceleration in macOS.</h5>
 </br>
 
-A [Lilu](https://github.com/acidanthera/Lilu) plug-in that simply prints Hello World! during verbose boot.
+This kext requires [Lilu](https://github.com/acidanthera/Lilu) to function.
 
-</br>
-<h1 align="center">Purpose</h1>
-</br>
+# How does it work?
 
-This kernel extension Sample Xcode project was developed specifically to be included in Carnation's extended writings where we describe how to develop Kernel Extensions for OS X / macOS. The current documentation is not yet available, but certain users would already prefer a live template so here we are!
-
-</br>
-<h1 align="center">Usage / Features</h1>
-</br>
-
-Yet to be written.
-
-</br>
-<h1 align="center">Contributing to the Project</h1>
-
-This Project does not take contributions as of right now.
-
-<h6 align="center">A big thanks to all contributors and future contributors! ꩓</h6>
+It doesn't. This kext literally does nothing but panics the system. If you really, *really* want to use this, add the `-imnotdumb` boot arg to your config.plist.
