@@ -17,6 +17,14 @@ const char *bootargOff[] {
     "-imnotdumb"
 };
 
+const char *bootargDebug[] {
+    "-gpufixdbg"
+};
+
+const char *bootargBeta[] {
+    "-gpufixbeta"
+};
+
 PluginConfiguration ADDPR(config) {
     xStringify(PRODUCT_NAME),
     parseModuleVersion(xStringify(MODULE_VERSION)),
@@ -26,7 +34,7 @@ PluginConfiguration ADDPR(config) {
     bootargOff,
     arrsize(bootargOff),
     KernelVersion::Mavericks,
-    KernelVersion::Tahoe,
+    KernelVersion::Sequoia,
     []() {
         sampleInit();
     }
