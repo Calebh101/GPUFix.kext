@@ -26,7 +26,7 @@ PluginConfiguration ADDPR(config) {
     bootargOff,
     arrsize(bootargOff),
     KernelVersion::Mavericks,
-    KernelVersion::Sequoia,
+    KernelVersion::Tahoe,
     []() {
         sampleInit();
     }
