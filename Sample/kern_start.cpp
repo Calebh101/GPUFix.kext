@@ -3,29 +3,18 @@
 //  Sample
 //
 //  Created by royalgraphx on 11/9/24.
+//  Edited by Calebh101 (all credit goes to the guy above)
 //
 
 #include "kern_start.hpp"
 
 // Main Function
 void sampleInit() {
-
-    // Say hello!
-    DBGLOG(MODULE_SHORT, "Hello World from Sample.kext!");
-    SYSLOG(MODULE_SHORT, "Hello World from Sample.kext!");
-
+    panic("Did you really think this kext would fix all your GPU problems?");
 }
 
 const char *bootargOff[] {
-    "-smpleoff"
-};
-
-const char *bootargDebug[] {
-    "-smpledbg"
-};
-
-const char *bootargBeta[] {
-    "-smplebeta"
+    "-imnotdumb"
 };
 
 PluginConfiguration ADDPR(config) {
@@ -36,10 +25,6 @@ PluginConfiguration ADDPR(config) {
     LiluAPI::AllowInstallerRecovery,
     bootargOff,
     arrsize(bootargOff),
-    bootargDebug,
-    arrsize(bootargDebug),
-    bootargBeta,
-    arrsize(bootargBeta),
     KernelVersion::Mavericks,
     KernelVersion::Sequoia,
     []() {
