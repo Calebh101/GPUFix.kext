@@ -8,3 +8,5 @@ This kext requires [Lilu](https://github.com/acidanthera/Lilu) to function.
 # How does it work?
 
 It doesn't. This kext literally does nothing but panics the system. If you really, *really* want to use this, add the `-imnotdumb` boot arg to your config.plist.
+
+Also use the `-gpufixbeta` boot arg to enable this kext on unsupported macOS versions, and the `-gpufixdbg` boot arg to enable this kext in debug mode.
